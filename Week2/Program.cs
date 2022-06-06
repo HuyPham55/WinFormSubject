@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using WindowsFormsApp1;
 
-namespace Week1
+namespace Week2
 {
     static class Program
     {
@@ -17,8 +16,7 @@ namespace Week1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new MDIParent1());
-            Application.Run(new EquationSolver());
+            Application.Run(new Form1());
         }
     }
 }

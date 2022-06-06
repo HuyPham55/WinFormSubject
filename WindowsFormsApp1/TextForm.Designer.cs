@@ -53,6 +53,7 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.label1);
             this.Name = "TextForm";
             this.Text = "TextForm";
+            this.Load += new System.EventHandler(this.TextForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
