@@ -1,16 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using System.Data;
-using System.Data.SqlClient;
-using System.Windows.Forms;
-
-namespace Week2
+namespace Week3
 {
-    class mDataConnection
+    class DatabaseConnection
     {
         public SqlConnection cnn;
         public SqlCommand cmd;
@@ -34,7 +32,7 @@ namespace Week2
         public DataTable ExecuteQuery(string sql)
         {
             LetsConnect();
-            ada = new SqlDataAdapter(sql, cnn);
+            ada = new SqlDataAdapter(sql, cnn)
             dta = new DataTable();
             ada.Fill(dta);
             return dta;

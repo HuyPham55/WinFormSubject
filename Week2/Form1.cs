@@ -32,6 +32,17 @@ namespace Week2
 
         private void Form1_Load(object sender, EventArgs e)
         {
+
+
+            DataTable dta = new DataTable();
+            string query = "Select * from CHUCVU";
+            dta = mConnection.ExecuteQuery(query);
+            dataGridView1.DataSource = dta;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+          
             DataTable dta = new DataTable();
             string query = "Select * from CHUCVU";
             dta = mConnection.ExecuteQuery(query);
