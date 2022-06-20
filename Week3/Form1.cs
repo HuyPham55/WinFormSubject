@@ -44,9 +44,7 @@ namespace Week3
 
         private void button3_Click(object sender, EventArgs e)
         {
-            string sql = `
-                
-                `;
+            string sql = "";
         }
 
         private void button4_Click(object sender, EventArgs e)

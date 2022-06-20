@@ -28,6 +28,7 @@ namespace Week3
         {
             string keyword = textBox1.Text;
             string sql = $"select * from NHANVIEN where ma_NV like {keyword}";
+            //sql = "select * from CHUCVU";
             DataTable dta = new DataTable();
             dta = connection.ExecuteQuery(sql);
             dataGridView1.DataSource = dta;
