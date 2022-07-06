@@ -69,8 +69,7 @@ namespace PHAMDUCHUY_2206.ChildrenForm
         private void StaffForm_Load(object sender, EventArgs e)
         {
             fetchData();
-
-     
+            button2.Enabled = false;
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -93,6 +92,8 @@ namespace PHAMDUCHUY_2206.ChildrenForm
 
             textBox8.Clear();
             textBox9.Clear();
+
+            button2.Enabled = true;
 
         }
 

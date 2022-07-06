@@ -17,7 +17,7 @@ namespace CodeBase
 
         public void LetsConnect()
         {
-            string connectionKey = @"Data Source=DESKTOP-QAKVRQJ;Initial Catalog=PHAMDUCHUY;Integrated Security=True";
+            string connectionKey = @"Data Source=DESKTOP-VA254TL\SQLEXPRESS;Initial Catalog=06072022;Integrated Security=True";
             cnn = new SqlConnection(connectionKey);
             cnn.Open();
         }
@@ -48,7 +48,7 @@ namespace CodeBase
             CloseMyConnection();
         }
 
-        public void ResultExist(string query)
+        public bool ResultExist(string query)
         {
             SqlCommand cmd = new SqlCommand(query, cnn);
             SqlDataReader flag = cmd.ExecuteReader();
