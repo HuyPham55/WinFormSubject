@@ -39,11 +39,30 @@ namespace Week4
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            /*
             DataTable dta = new DataTable();
             string sql = "select * from PhongBan order by ma_PB";
             dta = cnn.ExecuteQuery(sql);
             comboBox1.DataSource = dta;
             comboBox1.DisplayMember = "ma_PB";
+            */
+            loadCrystalReportView();
+
+        }
+
+        private void crystalReportViewer1_Load(object sender, EventArgs e)
+        {
+       
+        }
+
+        private void loadCrystalReportView()
+        {
+            DataTable dta = new DataTable();
+            string sql = "select * from DIEMMONHOC";
+            dta = cnn.ExecuteQuery(sql);
+            BaoCaoDiemHS rpt = new BaoCaoDiemHS();
+            rpt.SetDataSource(dta);
+            crystalReportViewer1.ReportSource = rpt;
         }
     }
 }

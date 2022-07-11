@@ -45,7 +45,6 @@ namespace PHAMDUCHUY_2206.ChildrenForm
             this.label7 = new System.Windows.Forms.Label();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -54,6 +53,7 @@ namespace PHAMDUCHUY_2206.ChildrenForm
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
+            this.textBox9 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -194,14 +194,6 @@ namespace PHAMDUCHUY_2206.ChildrenForm
             this.label8.TabIndex = 2;
             this.label8.Text = "Education";
             // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(98, 243);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(253, 20);
-            this.textBox9.TabIndex = 1;
-            this.textBox9.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -281,6 +273,14 @@ namespace PHAMDUCHUY_2206.ChildrenForm
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click_1);
             // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(98, 243);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(253, 20);
+            this.textBox9.TabIndex = 1;
+            this.textBox9.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
             // StaffForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -338,7 +338,6 @@ namespace PHAMDUCHUY_2206.ChildrenForm
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button button1;
@@ -347,5 +346,6 @@ namespace PHAMDUCHUY_2206.ChildrenForm
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.TextBox textBox9;
     }
 }

@@ -16,7 +16,7 @@ namespace Week4
 
         public void LetsConnect()
         {
-            string connectionKey = @"Data Source=DESKTOP-QAKVRQJ;Initial Catalog=PHAMDUCHUY;Integrated Security=True";
+            string connectionKey = @"Data Source=DESKTOP-IABFNUI\SQLEXPRESS;Initial Catalog=08072022;Integrated Security=True";
             cnn = new SqlConnection(connectionKey);
             cnn.Open();
         }
